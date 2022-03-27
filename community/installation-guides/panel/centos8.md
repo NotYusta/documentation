@@ -40,6 +40,9 @@ dnf module enable php:remi-8.0
 ## Get dnf updates
 dnf update -y
 
+## Reset PHP 8.0 Module - Rocky Linux ONLY
+dnf module reset php
+
 ## Install PHP 8.0
 dnf install -y php php-{common,fpm,cli,json,mysqlnd,gd,mbstring,pdo,zip,bcmath,dom,opcache}
 ```
